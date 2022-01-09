@@ -1,0 +1,125 @@
+
+@keyframes background{
+    0%{
+        margin-top: 20%;
+        opacity: 0;
+    }
+    100%{
+        margin-top: 5%;
+        opacity: 1;
+    }
+}
+
+.background{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 50px;
+    transition: all 2s ease-in;
+    animation: background 2s forwards;
+    position: relative;
+}
+.user{
+    width: 55%;
+}
+.Profile{
+    width: 50%;
+    height: 100%;
+    margin-left: 50%;
+    margin-right: 0;
+    position: absolute;
+}
+.hello{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.AboutMeConteiner{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: black;
+    position: relative;
+}
+.AboutMe{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.line{
+    /* position: absolute;
+    width: 200px;
+    height: 200px;
+    border: solid 2px #8400e1;
+    margin-left: 85%;
+    margin-top: -50px;
+    z-index: 1000; */
+}
+.box-social{
+    padding: 10px;
+    max-width: 50px;
+    border-radius: 50%;
+    border: solid 2px #8400e1;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in;
+}
+.conteiner-social{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 12vw;
+    justify-content: space-between;
+}
+.social{
+    color: #8400e1;
+}
+.box-social:hover{
+    background-color: white;
+    color: white;
+    cursor: pointer;
+}
+.boxWorks{
+    /* width: 50%; */
+}
+.conteinerTexts{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 20px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .conteinerTexts{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .Profile{
+        display: none;
+    }
+    .boxWorks{
+        width: 100%;
+    }
+    .user{
+        width: 80%;
+    }
+    .AboutMeConteiner{
+    font-size: 7px;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+       
+    }
+    .line{
+        display: none;
+    }
+  }

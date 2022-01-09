@@ -1,0 +1,27 @@
+.boxWorks{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.conteinerLaptop{
+    width: 100%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #8400e1;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .conteinerLaptop{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .boxWorks{
+        width: 90%;
+    }
+  }

@@ -1,0 +1,80 @@
+.Header{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    transition: all 0.5s ease-in;
+
+}
+.Header-active{
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s ease-in;
+}
+.logoHeader{
+    width: 100px;
+    transition: all 0.5s ease-in;
+
+}
+.BtnMenu{
+    background-color: transparent;
+    border: none;
+}
+
+
+.BtnMenu:hover{
+    cursor: pointer;
+}
+.BtnMenuIcon{
+    color: #8400e1;
+    transition: all 0.5s ease-in;
+    z-index: 100;
+}
+
+.BtnMenuIcon:hover{
+    color: white;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    height: 20vh;
+    background-color:#fff;
+    z-index: 100015;
+}
+.menu-active{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    height: 0vh;
+    overflow: hidden;
+}
+.menu-item{
+    color: #8400e1;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s ease-in;
+    width: 50%;
+    z-index: 1;
+}
+.menu-item-active{
+    color: #8400e1;
+    background-color: transparent;
+    border: none;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+.menu-item:hover{
+    cursor: pointer;
+}
